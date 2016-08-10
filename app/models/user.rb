@@ -6,6 +6,5 @@ class User < ActiveRecord::Base
 
 	has_many :contents         
 
-
-	
+	validates :nome, presence: true
 end
