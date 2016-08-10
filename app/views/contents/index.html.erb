@@ -5,6 +5,7 @@
 <table>
   <thead>
     <tr>
+      <th>Image</th>
       <th>Titolo</th>
       <th>Descrizione</th>
       <th>Nome</th>
@@ -16,6 +17,7 @@
   <tbody>
     <% @contents.each do |content| %>
       <tr>
+        <th><%= image_tag content.cover.url(:thumb)  %></th>
         <td><%= content.titolo %></td>
         <td><%= content.descrizione %></td>
         <td><%= content.user.name  %></td>
