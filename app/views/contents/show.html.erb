@@ -1,25 +1,35 @@
 <p id="notice"><%= notice %></p>
 
-<p>
+<div class="row">
+	<div class="col l6">
+		<%= image_tag @content.cover.url, class:"responsive-img show-img"  %>	
+	</div>
 
-<%= image_tag @content.cover.url(:medium)  %>
+	<div class="col l6">
+		<h1 class="show-titolo">	
+		  <%= @content.titolo %>
+		</h1>
+		<h4 class="show-prezzo"><%= number_to_currency(@content.price) %></h4>
+
+		<p>	Venduto da <b><%= @content.user.name %></b></p>
+
+		<p>
+		  <%= @content.descrizione %>
+		</p>
+
+		
+
+	</div>
+
+
+</div>
+
+
+
 <br>
 
-  <strong>Titolo:</strong>
-  <%= @content.titolo %>
-</p>
-
-<p>
-  <strong>Descrizione:</strong>
-  <%= @content.descrizione %>
-</p>
-
-<p>
-  <strong>Price:</strong>
-  <%= @content.price %>
-</p>
-
+ 
 <% if @content.user == current_user %>
 	<%= link_to 'Edit', edit_content_path(@content) %> |
 <% end %>
-<%= link_to 'Back', contents_path %>
+<%= link_to 'Torna Indietro', contents_path %>
