@@ -13,8 +13,14 @@
 <!-- Dropdown Structure -->
 <%= render "layouts/header" %>
   
-	<p class="notice"><%= notice %></p>
-	<p class="alert"><%= alert %></p>
+	<div class="container">
+		<% flash.each do | type, message | %>
+			<script type="text/javascript">
+				Materialize.toast("<%= message %>", 4000)
+			</script>
+		<% end %>
+
+	</div>
 
 <main class="container">
 	

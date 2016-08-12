@@ -28,11 +28,18 @@ gem 'materialize-sass'
 
 gem 'devise', '~> 4.2'
 gem 'paperclip', '~> 5.0'
+gem 'paperclip-av-transcoder'
+gem 'aws-sdk'
 gem 'will_paginate', '~> 3.0.6'
 gem 'will_paginate-materialize', '~> 0.1.2'
 gem 'friendly_id', '~> 5.1'
 gem 'dotenv-rails', :groups => [:development, :test]
-	
+gem 'stripe'	
+gem 'aasm', '~> 4.11'
+gem 'av'
+gem 'devise-i18n', '~> 1.1'
+
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
