@@ -1,5 +1,6 @@
 @import "materialize";
-
+@import "font-awesome-sprockets";
+@import "font-awesome";
 
 
 
@@ -7,15 +8,27 @@
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    font-family:'Raleway'
   }
 
   h1{
   font-size: 3em;
 }
 
+h2{
+  font-size: 2em;
+}
   main {
     flex: 1 0 auto;
   }
+
+
+
+  .home-subtitles
+  {
+    margin: 5% 0 5% 0;
+  }
+
 
   .btn-devise{
   	width:100%;
@@ -47,3 +60,17 @@
   }
 
   .pagination a li.active { color: #fff; }
+
+  .fa-social{
+    padding:0 10%;
+  }
+
+
+  @media(max-width: 600px){
+
+.fa-social{
+    padding:0 10%;
+  }
+
+
+  }

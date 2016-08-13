@@ -38,7 +38,7 @@ gem 'stripe'
 gem 'aasm', '~> 4.11'
 gem 'av'
 gem 'devise-i18n', '~> 1.1'
-
+gem 'font-awesome-sass'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
