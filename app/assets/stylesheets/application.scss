@@ -22,11 +22,25 @@ h2{
     flex: 1 0 auto;
   }
 
-
+h4{
+  font-size:1.2em;
+  font-weight:bold;
+}
 
   .home-subtitles
   {
     margin: 5% 0 5% 0;
+  }
+
+  .content-show
+  {
+    margin-top: 5%;
+  }
+
+
+  .dropdown-content 
+  {
+    min-width: 150px;
   }
 
 
@@ -74,3 +88,5 @@ h2{
 
 
   }
+
+
